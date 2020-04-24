@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-
+import numpy
 try:
     from setuptools import setup, Extension
 except ImportError :
@@ -12,7 +12,11 @@ setup(
     version='1.10',
     description='A Cython implementation of the affine gap string distance',
     packages=['gotoh_scores'],
-    ext_modules=[Extension('gotoh_scores.gotoh_scores', ['gotoh_scores/gotoh_scores.c'])],
+    ext_modules=[Extension(
+        'gotoh_scores.gotoh_scores', 
+        ['gotoh_scores/gotoh_scores.c'],
+        include_dirs=[numpy.get_include()]),
+        ],
     license='The MIT License: http://www.opensource.org/licenses/mit-license.php',
     classifiers=[
         'Development Status :: 5 - Production/Stable',

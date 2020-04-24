@@ -1,1 +1,1 @@
-from .gotoh_scores import scores
+from .gotoh_scores import scores, align

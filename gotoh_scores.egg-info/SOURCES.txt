@@ -1,0 +1,8 @@
+README.md
+setup.py
+gotoh_scores/__init__.py
+gotoh_scores/gotoh_scores.c
+gotoh_scores.egg-info/PKG-INFO
+gotoh_scores.egg-info/SOURCES.txt
+gotoh_scores.egg-info/dependency_links.txt
+gotoh_scores.egg-info/top_level.txt
